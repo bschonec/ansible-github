@@ -11,8 +11,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout sources
-        uses: actions/checkout@main
-      - name: first lint
-        uses: ansible/ansible-lint-action@main
+        uses: actions/checkout@4
       - name: Run ansible-lint
-        uses: ansible/ansible-lint@main
+        uses: ansible/ansible-lint@main # or version tag instead of 'main'
+
